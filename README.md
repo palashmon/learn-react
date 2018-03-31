@@ -1,3 +1,10 @@
+# Learn React
+
+[![Dependency Status](https://david-dm.org/palashmon/learn-react/dev-status.svg)](https://david-dm.org/palashmon/learn-react)
+[![Languages Count](https://img.shields.io/github/languages/count/palashmon/learn-react.svg)](https://github.com/palashmon/learn-react/search?l=javascript)
+[![Top Language Used](https://img.shields.io/github/languages/top/palashmon/learn-react.svg)](https://github.com/palashmon/learn-react/search?l=javascript)
+&nbsp;
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
