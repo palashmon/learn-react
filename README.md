@@ -15,7 +15,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 *   [x] Setup Workspace with `Create React App`
 *   [x] Creating First Component
-*   [ ] Multiple Components
+*   [x] Multiple Components
+*   [ ] Outputting dynamic Data
 *   [ ] TODO
 
 ## Something Missing?
