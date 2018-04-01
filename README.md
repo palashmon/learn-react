@@ -1,6 +1,7 @@
 # Learn React
 
-[![Dependency Status](https://david-dm.org/palashmon/learn-react/dev-status.svg)](https://david-dm.org/palashmon/learn-react)
+[![Dependency Status](https://david-dm.org/palashmon/learn-react.svg)](https://david-dm.org/palashmon/learn-react)
+[![Dev-Dependency Status](https://david-dm.org/palashmon/learn-react/dev-status.svg)](https://david-dm.org/palashmon/learn-react?type=dev)
 [![Languages Count](https://img.shields.io/github/languages/count/palashmon/learn-react.svg)](https://github.com/palashmon/learn-react/search?l=javascript)
 [![Top Language Used](https://img.shields.io/github/languages/top/palashmon/learn-react.svg)](https://github.com/palashmon/learn-react/search?l=javascript)
 &nbsp;
