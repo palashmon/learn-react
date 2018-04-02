@@ -277,6 +277,7 @@ figure.left {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    min-height: 400px;
 }
 
 /*
@@ -285,4 +286,15 @@ figure.left {
 #contentinfo {
     padding-bottom: 2em;
     text-align: left;
+}
+.footer {
+    background: #000305;
+    color: whitesmoke;
+    width: 760px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 35px;
+    padding: 0 20px;
+    vertical-align: middle;
 }

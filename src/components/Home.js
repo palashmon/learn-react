@@ -7,6 +7,8 @@ class Home extends Component {
                 <section id="content" className="body">
                     Hello World!
                 </section>
+
+                <section className="body footer">&copy; PM {new Date().toLocaleString()}</section>
             </div>
         );
     }
