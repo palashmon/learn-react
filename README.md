@@ -17,6 +17,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 *   [x] Creating First Component
 *   [x] Multiple Components
 *   [x] Outputting dynamic Data
+*   [x] Passing Data with Props
 *   [ ] TODO
 
 ## Something Missing?
