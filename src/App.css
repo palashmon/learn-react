@@ -111,11 +111,6 @@ dd {
 blockquote {
     font-style: italic;
 }
-cite {
-}
-
-q {
-}
 
 /* Tables */
 table {
@@ -128,25 +123,10 @@ thead th {
     padding: 0.5em 0.4em;
     text-align: left;
 }
-thead td {
-}
 
 /* Tbody */
 tbody td {
     padding: 0.5em 0.4em;
-}
-tbody th {
-}
-
-tbody .alt td {
-}
-tbody .alt th {
-}
-
-/* Tfoot */
-tfoot th {
-}
-tfoot td {
 }
 
 /* HTML5 tags */
@@ -233,7 +213,6 @@ figure.left {
 }
 #banner nav li {
     float: left;
-    display: inline;
     margin: 0;
 }
 
