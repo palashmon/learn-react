@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import BaseComponent from '../components/BaseComponent';
 
-class Home extends Component {
+class Home extends BaseComponent {
     // Call the constructor here
     constructor(props) {
         super();
@@ -9,12 +10,16 @@ class Home extends Component {
         this.number = props.number;
 
         // This binding is necessary to make `this` work in the callback
-        this.onIncreaseButtonClick = this.onIncreaseButtonClick.bind(this);
+        this._bind('_handleButtonClick', '_handleClick');
     }
 
-    onIncreaseButtonClick() {
+    _handleButtonClick() {
         console.log(this);
         this.number += 5;
+    }
+
+    _handleClick() {
+        console.log(this);
     }
 
     render() {
@@ -29,7 +34,7 @@ class Home extends Component {
                     <p>Your name is {this.props.name}</p>
                     <p>Current number: {this.number}</p>
                     <hr />
-                    <button onClick={this.onIncreaseButtonClick} type="button" className="btn btn-sm btn-info">
+                    <button onClick={this._handleButtonClick} type="button" className="btn btn-sm btn-info">
                         Increase Number
                     </button>
                 </section>
