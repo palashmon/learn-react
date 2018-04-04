@@ -18,8 +18,13 @@ You can find the most recent version of this guide [here](https://github.com/fac
 *   [x] Multiple Components
 *   [x] Outputting dynamic Data
 *   [x] Passing Data with Props
+*   [x] [Handling Events][handling_events]
 *   [ ] TODO
 
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+
+<!-- All links here -->
+
+[handling_events]: https://reactjs.org/docs/handling-events.html
