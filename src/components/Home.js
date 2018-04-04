@@ -2,22 +2,36 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Home extends Component {
+    // Call the constructor here
+    constructor(props) {
+        super();
+        console.log(props);
+        this.number = props.number;
+
+        // This binding is necessary to make `this` work in the callback
+        this.onIncreaseButtonClick = this.onIncreaseButtonClick.bind(this);
+    }
+
+    onIncreaseButtonClick() {
+        console.log(this);
+        this.number += 5;
+    }
+
     render() {
         console.log(this.props);
-        console.log(this.props.children);
+        // console.log(this.props.children);
 
-        let namesList = this.props.names.map((name, index) => <li key={index}>{name}</li>);
-
+        // Return the view
         return (
             <div>
                 <section id="content" className="body">
                     <p>Hello World!</p>
                     <p>Your name is {this.props.name}</p>
-                    <p>Your car is {this.props.car.type + ' ' + this.props.car.model}</p>
-                    <p>Looping through an array:-</p>
-                    <ul>{namesList}</ul>
+                    <p>Current number: {this.number}</p>
                     <hr />
-                    {this.props.children}
+                    <button onClick={this.onIncreaseButtonClick} type="button" className="btn btn-sm btn-info">
+                        Increase Number
+                    </button>
                 </section>
 
                 <section className="body footer">&copy; PM {new Date().toLocaleString()}</section>
@@ -28,9 +42,7 @@ class Home extends Component {
 
 Home.propTypes = {
     name: PropTypes.string,
-    car: PropTypes.object,
-    names: PropTypes.array,
-    children: PropTypes.element.isRequired
+    number: PropTypes.number
 };
 
 export default Home;

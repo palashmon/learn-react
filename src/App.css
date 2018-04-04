@@ -143,7 +143,7 @@ figure {
 .body {
     clear: both;
     margin: 0 auto;
-    width: 800px;
+    width: 780px;
 }
 img.right figure.right {
     float: right;
@@ -198,8 +198,7 @@ figure.left {
     margin: 0 auto 2em auto;
     padding: 0;
     text-align: center;
-    width: 800px;
-
+    width: 760px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -220,7 +219,7 @@ figure.left {
 #banner nav a:visited {
     color: #fff;
     display: inline-block;
-    height: 30px;
+    height: 40px;
     padding: 5px 1.5em;
     text-decoration: none;
 }
