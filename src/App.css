@@ -3,8 +3,8 @@ body {
     background: #f5f2f0;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
-        Arial, sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+        sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -275,4 +275,18 @@ figure.left {
     line-height: 35px;
     padding: 0 20px;
     vertical-align: middle;
+}
+
+.text-animate {
+    animation: text-animate 1s 1 ease-in-out;
+}
+@keyframes text-animate {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+        letter-spacing: 11px;
+    }
 }

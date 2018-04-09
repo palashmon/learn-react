@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
 const Header = props => (
     <header id="banner" className="body">
         <h1>
             <a href="#">
-                Learn React<br />
+                {props.homeLink}
+                <br />
                 <strong>Simplest case example of ReactJS</strong>
             </a>
         </h1>
-
         <nav>
             <ul>
                 <li className="active">
