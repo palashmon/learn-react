@@ -25,7 +25,12 @@ class App extends BaseComponent {
         return (
             <div className="App">
                 <Header homeLink={this.state.homeLink} />
-                <Home name={'Palash'} initialNumber={number} changeLink={this.onChangeLinkName} />
+                <Home
+                    name={'Palash'}
+                    initialNumber={number}
+                    changeLink={this.onChangeLinkName}
+                    initialLinkName={this.state.homeLink}
+                />
             </div>
         );
     }

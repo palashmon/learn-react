@@ -11,16 +11,16 @@ class Home extends BaseComponent {
             number: props.initialNumber,
             status: 0,
             currentDate: new Date().toLocaleString(),
-            homeLink: 'Changed Link'
+            homeLink: props.initialLinkName
         };
 
         // This binding is necessary to make `this` work in the callback
-        this._bind('onButtonClick', 'onHandleClick', 'onChangeLink');
+        this._bind('onButtonClick', 'onHandleClick', 'onChangeLink', 'onHandleChange');
     }
 
     onChangeLink() {
-        let newLink = this.state.homeLink === 'Changed Link' ? 'Learn React' : 'Changed Link';
-        this.setState({ homeLink: newLink });
+        // let newLink = this.state.homeLink === 'Changed Link' ? 'Learn React' : 'Changed Link';
+        this.setState({ homeLink: this.state.homeLink });
         this.props.changeLink(this.state.homeLink);
     }
 
@@ -31,6 +31,12 @@ class Home extends BaseComponent {
 
     onHandleClick() {
         console.log(this);
+    }
+
+    onHandleChange(event) {
+        this.setState({
+            homeLink: event.target.value
+        });
     }
 
     render() {
@@ -48,7 +54,15 @@ class Home extends BaseComponent {
                     <button onClick={this.onButtonClick} type="button" className="btn btn-sm btn-info">
                         Increase Number
                     </button>
-                    <button onClick={this.onChangeLink} type="button" className="btn btn-sm btn-info ml-1">
+                    <hr />
+                    <input
+                        type="text"
+                        value={this.state.homeLink}
+                        onChange={this.onHandleChange}
+                        className="form-control"
+                        placeholder="Enter Linkname"
+                    />
+                    <button onClick={this.onChangeLink} type="button" className="btn btn-sm btn-info mt-2">
                         Change Header Link
                     </button>
                 </section>
