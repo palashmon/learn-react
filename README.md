@@ -23,6 +23,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 *   [x] [Virtual DOM in ReactJS][virtual_dom]
 *   [x] [Stateless Functional Components][stateless]
 *   [x] [Passing Data between Parent and Child Components][passing-data]
+*   [x] [Two way data binding][2-way-data-binding]
 *   [ ] TODO
 
 ## Something Missing?
@@ -36,3 +37,4 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 [virtual_dom]: https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130
 [stateless]: https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d
 [passing-data]: https://medium.com/@ruthmpardee/passing-data-between-react-components-103ad82ebd17
+[2-way-data-binding]: https://medium.com/front-end-hacking/tutorial-react-two-way-data-binding-2018-b935cb200964
