@@ -14,8 +14,46 @@ class Home extends BaseComponent {
             homeLink: props.initialLinkName
         };
 
+        setTimeout(() => {
+            this.setState({ status: 1 });
+        }, 2000);
+
         // This binding is necessary to make `this` work in the callback
         this._bind('onButtonClick', 'onHandleClick', 'onChangeLink', 'onHandleChange');
+
+        console.log('Constructor');
+    }
+
+    componentWillMount() {
+        console.log('Component will mount');
+    }
+
+    componentDidMount() {
+        console.log('Component did mount!');
+    }
+
+    componentWillReceiveProps(nextProps) {
+        console.log('Component will receive props', nextProps);
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('Should Component update', nextProps, nextState);
+        // if (nextState.status === 1) {
+        //     return false;
+        // }
+        return true;
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log('Component will update', nextProps, nextState);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('Component did update', prevProps, prevState);
+    }
+
+    componentWillUnmount() {
+        console.log('Component will unmount');
     }
 
     onChangeLink() {
