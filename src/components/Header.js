@@ -1,29 +1,20 @@
 import React from 'react';
-import '../App.css';
+import { Link } from 'react-router-dom';
 
-const Header = props => (
+// The Header creates links that can be used to navigate
+// between routes.
+const Header = () => (
     <header id="banner" className="body">
-        <h1>
-            <a href="#">
-                {props.homeLink}
-                <br />
-                <strong>Simplest case example of ReactJS</strong>
-            </a>
-        </h1>
         <nav>
             <ul>
                 <li className="active">
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
-                </li>
-
-                <li>
-                    <a href="#">Blog</a>
+                    <Link to="/roster">Roster</Link>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <Link to="/schedule">Schedule</Link>
                 </li>
             </ul>
         </nav>
