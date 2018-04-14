@@ -25,6 +25,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 *   [x] [Passing Data between Parent and Child Components][passing-data]
 *   [x] [Two way data binding][2-way-data-binding]
 *   [x] [Component Lifecycle][component-lifecycle]
+*   [x] [Using React Router v4][react-router]
 *   [ ] TODO
 
 ## Something Missing?
@@ -40,3 +41,4 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 [passing-data]: https://medium.com/@ruthmpardee/passing-data-between-react-components-103ad82ebd17
 [2-way-data-binding]: https://medium.com/front-end-hacking/tutorial-react-two-way-data-binding-2018-b935cb200964
 [component-lifecycle]: https://hackernoon.com/reactjs-component-lifecycle-methods-a-deep-dive-38275d9d13c0
+[react-router]: https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
